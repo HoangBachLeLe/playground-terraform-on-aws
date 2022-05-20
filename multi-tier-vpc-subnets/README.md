@@ -1,5 +1,7 @@
 ### Terraform on AWS: multi-tier VPC subnets
 
+- create VPC in `${aws_region}` with subnets, internet gateway, nat gateway, route table
+
 | Name          | CIDR           | AZ |
 | ------------- | -------------- | -- |
 | sn-reserved-A | 10.16.0.0/20   | A  |
