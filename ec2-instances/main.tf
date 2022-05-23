@@ -62,6 +62,8 @@ resource "aws_instance" "web_instance" {
     Environment = "dev"
     Name        = "AZ-${each.key}"
   }
+  monitoring = true
+  ebs_optimized = true
 }
 
 resource "aws_security_group" "web_sg" {
